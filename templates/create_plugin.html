@@ -1,0 +1,14 @@
+<html>
+<h1> Welcome to New Plug-in creation Tool</h1>
+<form action="/plugin/" method="POST">
+{% csrf_token %}
+    old plugin name: <input type="text" name="old_plugin_name"><br/><br/>
+	new plugin name: <input id="new_plugin_name" type="text" name="new_plugin_name"><br/><br/>
+	old workbench version: <input id="old_wb_version" type="text" name="old_esx_version"><br/><br/>
+	new workkbench version: <input id="new_wb_version" type="text" name="new_esx_version"><br/><br/>
+	old esxi version: <input id="old_esxi_version" type="text" name="old_wb_version"><br/><br/>
+	new esxi version: <input id="new_esxi_version" type="text" name="new_wb_version"><br/><br/>
+	Enter the path: <input id="path" type="text" name="path"><br/><br/>
+    <input type="submit" value="Submit">
+</form>
+</html>
